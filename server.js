@@ -12,11 +12,11 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
-app.use("/api/v3/user/", UserRouter);
+app.use("/api/v3/", UserRouter);
 
 
-app.get('/test', function (req, res) {
-    res.send("I am working")
+app.get('/', function (req, res) {
+    res.send(`<h3>I am working </h3>`)
 });
 
 
